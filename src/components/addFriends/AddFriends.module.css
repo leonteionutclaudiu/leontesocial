@@ -1,0 +1,86 @@
+.followList {
+  background-color: #3b5998;
+  color: #ffffff;
+  height: 0;
+  text-align: center;
+}
+
+.showListButton,
+.hideListButton {
+  background-color: transparent;
+  border: none;
+  color: #ffffff;
+  font-size: 16px;
+  cursor: pointer;
+  /* margin-right: 14px; */
+  /* position: relative; */
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.hideListButton {
+  color: black;
+}
+
+.showListButton:hover,
+.hideListButton:hover {
+  color: rgb(64, 212, 64);
+  transform: scale(1.4);
+}
+
+.peopleList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-height: 400px;
+  overflow-y: auto;
+  background-color: #3b5998;
+  border-radius: 3%;
+  margin-top: 18px;
+}
+
+.person {
+  display: flex;
+  align-items: center;
+  padding: 8px;
+}
+
+.thumbnail {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+}
+
+.name {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.followButton,
+.unfollowButton {
+  background-color: transparent;
+  border: none;
+  color: #18f297;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.followButton:hover,
+.unfollowButton:hover {
+  color: #19b172;
+}
+
+.peopleInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-right: 10px;
+}
+
+.peopleCountry {
+  font-size: 12px;
+  font-weight: 300;
+  font-style: italic;
+  color: paleturquoise;
+}

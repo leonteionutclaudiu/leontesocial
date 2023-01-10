@@ -1,0 +1,134 @@
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  height: 100vh;
+  background-color: #f8f9fd;
+}
+
+.loginInput {
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  font-size: 18px;
+}
+
+.loginInput:focus {
+  outline: none;
+}
+
+.loginBtn {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  background-color: #1775ee;
+  border: 1px solid #1775ee;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10%;
+  transition: all 0.4s;
+  width: 50%;
+}
+
+.loginBtn:hover {
+  transform: rotate(7deg);
+  background-color: #031d3f;
+  border: 1px solid #fff;
+  border-bottom-right-radius: 50%;
+}
+
+.loginRegisterButton {
+  text-decoration: none;
+  width: 35%;
+  text-align: center;
+  background-color: #42b72a;
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  border: 1px solid #42b72a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 10%;
+  transition: all 0.4s;
+}
+
+.loginRegisterButton:hover {
+  transform: rotate(-7deg);
+  background-color: #216d11;
+  border: 1px solid #fff;
+  border-bottom-left-radius: 50%;
+}
+
+.forgot {
+  margin-top: 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  color: darkorange;
+  transition: all 0.3s;
+  width: 100%;
+  text-align: center;
+}
+
+.forgot:hover {
+  color: darkblue;
+}
+
+.buttonContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.loginForm {
+  background-color: white;
+  padding: 2rem;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.listContainer {
+  display: flex;
+}
+
+.error {
+  color: red;
+  font-size: 18px;
+  display: block;
+  padding: 40px 0;
+  text-align: center;
+}
+
+.title {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.inputContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin: 10px;
+}
+
+.logo {
+  font-size: 50px;
+  margin-left: 20px;
+  font-weight: bold;
+  color: #1775ee;
+}
+
+.loginNow {
+  font-size: 24px;
+  background-color: #1775ee;
+  color: #fff;
+  border-radius: 10%;
+  padding: 10px 20px;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.loginNow:hover {
+  background-color: #031d3f;
+}
