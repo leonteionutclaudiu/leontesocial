@@ -1,13 +1,35 @@
 import { Link, useNavigate } from 'react-router-dom';
 import classes from './Register.module.css';
+import { useState } from 'react';
+import { database } from '../login/Login';
 
 function Register() {
+  const [mailInput, setMailInput] = useState('');
+  const [passwordInput, setPasswordInput] = useState('');
+
   const navigate = useNavigate();
 
   const signUpHandler = (event) => {
     event.preventDefault();
-    navigate('/');
+
+    database.push({
+      email: mailInput,
+      password: passwordInput,
+    });
+
     alert('Please log in now!');
+
+    navigate('/');
+
+    console.log(database);
+  };
+
+  const handleMailChange = (e) => {
+    setMailInput(e.target.value);
+  };
+
+  const handlePasswordChange = (e) => {
+    setPasswordInput(e.target.value);
   };
 
   return (
@@ -32,12 +54,16 @@ function Register() {
               type="email"
               className={classes.loginInput}
               required
+              value={mailInput}
+              onChange={handleMailChange}
             />
             <input
               placeholder="Password"
               type="password"
               className={classes.loginInput}
               required
+              value={passwordInput}
+              onChange={handlePasswordChange}
             />
 
             <button className={classes.loginButton}>Sign up</button>

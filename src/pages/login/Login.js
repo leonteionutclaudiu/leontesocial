@@ -2,22 +2,22 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Login.module.css';
 
+// User Login info
+export const database = [
+  {
+    email: 'user1@leonte.com',
+    password: 'pass1',
+  },
+  {
+    email: 'user2@leonte.com',
+    password: 'pass2',
+  },
+];
+
 function Login() {
   // React States
   const [errorMessages, setErrorMessages] = useState('');
   const [isSubmitted, setIsSubmitted] = useState(false);
-
-  // User Login info
-  const database = [
-    {
-      email: 'user1@leonte.com',
-      password: 'pass1',
-    },
-    {
-      email: 'user2@leonte.com',
-      password: 'pass2',
-    },
-  ];
 
   const handleSubmit = (event) => {
     //Prevent page reload
