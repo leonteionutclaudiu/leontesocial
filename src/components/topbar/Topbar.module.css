@@ -20,6 +20,16 @@
   color: white;
   cursor: pointer;
   text-decoration: none;
+  transition: all 0.4s;
+}
+
+.logo:hover {
+  color: #40d440;
+}
+
+.logoIcon {
+  margin-right: 10px;
+  animation: vibrate 2s linear both infinite;
 }
 
 .topbarCenter {
@@ -96,11 +106,13 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
-  transition: all 0.4s;
+  transition: 0.5s ease;
 }
 
 .topbarImg:hover {
-  transform: translate(-4px, 10px);
+  box-shadow: 0 0 0 10px #000000;
+  border-radius: 25%;
+  transform: translateX(-5px);
 }
 
 .homeIcon,
@@ -109,11 +121,32 @@
 }
 
 .homeIcon:hover {
-  color: rgb(64, 212, 64);
+  color: #40d440;
   transform: scale(1.4);
 }
 
 .logoutIcon:hover {
   color: red;
   transform: scale(1.4);
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
 }

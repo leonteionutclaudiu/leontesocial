@@ -4,6 +4,8 @@ import Profile from './pages/profile/Profile';
 import Register from './pages/register/Register';
 import { Route, Routes } from 'react-router-dom';
 
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 function App() {
   return (
     <Routes>

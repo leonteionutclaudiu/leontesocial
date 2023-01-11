@@ -34,6 +34,11 @@
   width: 100%;
   border-radius: 10px;
   margin-bottom: 30px;
+  transition: all 0.4s;
+}
+
+.rightbarAd:hover {
+  transform: scale(1.15);
 }
 
 .rightbarTitle {
@@ -74,6 +79,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  overflow: hidden;
 }
 
 .rightbarFollowing {
@@ -88,4 +94,9 @@
   height: 100px;
   object-fit: cover;
   border-radius: 5px;
+  transition: all 0.4s;
+}
+
+.rightbarFollowingImg:hover {
+  transform: scale(1.2);
 }

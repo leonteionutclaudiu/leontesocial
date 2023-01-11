@@ -1,5 +1,5 @@
 import classes from './Topbar.module.css';
-import { Chat, Home, Logout, Search } from '@mui/icons-material';
+import { Chat, Diversity2, Home, Logout, Search } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import AddFriends from '../addFriends/AddFriends';
 import NotificationBar from '../notificationBar/NotificationBar';
@@ -9,7 +9,8 @@ function Topbar() {
     <div className={classes.topbarContainer}>
       <div className={classes.topbarLeft}>
         <span>
-          <Link to="/home" className={classes.logo}>
+          <Link to="/home" className={`${classes.logo} `}>
+            <Diversity2 className={classes.logoIcon} />
             LeonteSocial
           </Link>
         </span>
@@ -47,7 +48,11 @@ function Topbar() {
         </div>
       </div>
       <Link to="/profile">
-        <img className={classes.topbarImg} src="/assets/person/1.jpeg" alt="" />
+        <img
+          className={classes.topbarImg}
+          src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=f05c14dd4db49f08a789e6449604c490"
+          alt=""
+        />
       </Link>
     </div>
   );
