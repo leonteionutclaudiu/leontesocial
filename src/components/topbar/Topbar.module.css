@@ -4,7 +4,7 @@
   background-color: #1877f2;
   display: flex;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 999;
 }
@@ -96,4 +96,24 @@
   border-radius: 50%;
   object-fit: cover;
   cursor: pointer;
+  transition: all 0.4s;
+}
+
+.topbarImg:hover {
+  transform: translate(-4px, 10px);
+}
+
+.homeIcon,
+.logoutIcon {
+  transition: all 0.4s;
+}
+
+.homeIcon:hover {
+  color: rgb(64, 212, 64);
+  transform: scale(1.4);
+}
+
+.logoutIcon:hover {
+  color: red;
+  transform: scale(1.4);
 }

@@ -19,7 +19,7 @@ function NotificationBar() {
         className={classes.notificationsBtn}
         onClick={() => setIsOpen(!isOpen)}
       >
-        {isOpen ? <NotificationsOff htmlColor="black" /> : <Notifications />}
+        {isOpen ? <NotificationsOff /> : <Notifications />}
       </button>
       {isOpen && (
         <div className={classes.notificationBar}>

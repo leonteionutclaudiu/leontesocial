@@ -2,7 +2,7 @@ import classes from './Feed.module.css';
 import { useState } from 'react';
 import { Posts } from '../../dummyData';
 import Post from '../../components/post/Post';
-import { PermMedia, Label, Room, EmojiEmotions } from '@mui/icons-material';
+// import { PermMedia, Label, Room, EmojiEmotions } from '@mui/icons-material';
 
 function Feed() {
   const [newPost, setNewPost] = useState('');
@@ -45,9 +45,12 @@ function Feed() {
               value={newPost}
               onChange={(e) => setNewPost(e.target.value)}
             />
+            <button className={classes.shareButton} onClick={() => addPost()}>
+              Share
+            </button>
           </div>
           <hr className={classes.shareHr} />
-          <div className={classes.shareBottom}>
+          {/* <div className={classes.shareBottom}>
             <div className={classes.shareOptions}>
               <div className={classes.shareOption}>
                 <PermMedia htmlColor="tomato" className={classes.shareIcon} />
@@ -69,11 +72,9 @@ function Feed() {
                 <span className={classes.shareOptionText}>Feelings</span>
               </div>
             </div>
-            <button className={classes.shareButton} onClick={() => addPost()}>
-              Add Post
-            </button>
-          </div>
-          <ul>
+            
+          </div> */}
+          <ul className={classes.postList}>
             {posts.reverse().map((post) => {
               return <Post key={post.id} post={post} />;
             })}

@@ -24,12 +24,12 @@ function Topbar() {
         <div className={classes.topbarLinks}>
           <span>
             <Link to="/home" className={classes.topbarLink}>
-              <Home />
+              <Home className={classes.homeIcon} />
             </Link>
           </span>
           <span>
             <Link to="/" className={classes.topbarLink}>
-              <Logout />
+              <Logout className={classes.logoutIcon} />
             </Link>
           </span>
         </div>
