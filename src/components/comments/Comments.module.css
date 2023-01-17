@@ -1,0 +1,30 @@
+@import '../../index.css';
+
+.commentsTitle {
+  background-color: var(--grey);
+}
+
+.ulComments {
+  height: 100;
+  max-height: 50vh;
+  overflow-y: scroll;
+}
+
+.comment {
+  list-style: none;
+  background-color: var(--light);
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.commentBtn {
+  cursor: pointer;
+  border-bottom: 1px dashed var(--primary-color);
+  font-size: 15px;
+  transition: all 0.4s;
+}
+
+.commentBtn:hover {
+  color: var(--secondary-color-dark);
+  border-bottom: 1px dashed var(--primary-color-dark);
+}

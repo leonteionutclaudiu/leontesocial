@@ -93,36 +93,11 @@ function Feed() {
 
           {showShareError ? (
             <Alert variant="danger">
-              Please write at least 5 characters to be able to post!
+              Please write at least 6 characters to be able to post!
             </Alert>
           ) : (
             ''
           )}
-
-          {/* <div className={classes.shareBottom}>
-            <div className={classes.shareOptions}>
-              <div className={classes.shareOption}>
-                <PermMedia htmlColor="tomato" className={classes.shareIcon} />
-                <span className={classes.shareOptionText}>Photo or Video</span>
-              </div>
-              <div className={classes.shareOption}>
-                <Label htmlColor="blue" className={classes.shareIcon} />
-                <span className={classes.shareOptionText}>Tag</span>
-              </div>
-              <div className={classes.shareOption}>
-                <Room htmlColor="green" className={classes.shareIcon} />
-                <span className={classes.shareOptionText}>Location</span>
-              </div>
-              <div className={classes.shareOption}>
-                <EmojiEmotions
-                  htmlColor="goldenrod"
-                  className={classes.shareIcon}
-                />
-                <span className={classes.shareOptionText}>Feelings</span>
-              </div>
-            </div>
-            
-          </div> */}
           <ul className={classes.postList}>
             {posts.reverse().map((post) => {
               return <Post key={post.id} post={post} />;
@@ -130,6 +105,8 @@ function Feed() {
           </ul>
         </div>
       </div>
+
+      <div className={classes.pushNotification}></div>
     </div>
   );
 }

@@ -44,12 +44,6 @@ function Register() {
         <div className={classes.loginRight}>
           <form onSubmit={signUpHandler} className={classes.loginBox}>
             <input
-              placeholder="Username"
-              type="text"
-              className={classes.loginInput}
-              required
-            />
-            <input
               placeholder="Email"
               type="email"
               className={classes.loginInput}

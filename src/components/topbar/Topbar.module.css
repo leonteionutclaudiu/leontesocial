@@ -1,8 +1,11 @@
+@import '../../index.css';
+
 .topbarContainer {
   height: 50px;
   width: 100%;
-  background-color: #1877f2;
+  background-color: var(--primary-color);
   display: flex;
+  justify-content: space-between;
   align-items: center;
   position: sticky;
   top: 0;
@@ -10,21 +13,22 @@
 }
 
 .topbarLeft {
-  flex: 3;
+  flex: 2;
+  /* justify-self: flex-start; */
 }
 
 .logo {
   font-size: 24px;
   margin-left: 20px;
   font-weight: bold;
-  color: white;
+  color: var(--light);
   cursor: pointer;
   text-decoration: none;
   transition: all 0.4s;
 }
 
 .logo:hover {
-  color: #40d440;
+  color: var(--tertiary-color);
 }
 
 .logoIcon {
@@ -32,39 +36,12 @@
   animation: vibrate 2s linear both infinite;
 }
 
-.topbarCenter {
-  flex: 5;
-}
-
-.searchBar {
-  width: 50%;
-  height: 30px;
-  background-color: white;
-  border-radius: 30px;
-  display: flex;
-  align-items: center;
-}
-
-.searchIcon {
-  font-size: 20px !important;
-  margin-left: 10px;
-}
-
-.searchInput {
-  border: none;
-  width: 70%;
-}
-
-.searchInput:focus {
-  outline: none;
-}
-
 .topbarRight {
-  flex: 4;
+  flex: 7;
   display: flex;
   align-items: center;
-  justify-content: space-around;
-  color: white;
+  justify-content: space-between;
+  color: var(--light);
 }
 
 .topbarLink {
@@ -72,32 +49,19 @@
   font-size: 14px;
   cursor: pointer;
   text-decoration: none;
-  color: white;
+  color: var(--light);
 }
 
 .topbarIcons {
   display: flex;
+  align-items: center;
+  /* justify-content: center; */
 }
 
 .topbarIconItem {
   margin-right: 14px;
   cursor: pointer;
   position: relative;
-}
-
-.topbarIconBadge {
-  width: 15px;
-  height: 15px;
-  background-color: red;
-  border-radius: 50%;
-  color: white;
-  position: absolute;
-  top: -5px;
-  right: -5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 12px;
 }
 
 .topbarImg {
@@ -110,7 +74,7 @@
 }
 
 .topbarImg:hover {
-  box-shadow: 0 0 0 10px #000000;
+  box-shadow: 0 0 0 10px var(--dark);
   border-radius: 25%;
   transform: translateX(-5px);
 }
@@ -121,7 +85,7 @@
 }
 
 .homeIcon:hover {
-  color: #40d440;
+  color: var(--tertiary-color);
   transform: scale(1.4);
 }
 

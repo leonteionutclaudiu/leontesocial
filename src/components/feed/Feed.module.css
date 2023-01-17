@@ -1,3 +1,5 @@
+@import '../../index.css';
+
 .feed {
   flex: 7.5;
 }
@@ -34,8 +36,8 @@
 
 .shareProfileImg:hover {
   transform: scale(1.2);
-  background-color: #999;
-  color: white;
+  background-color: var(--grey);
+  color: var(--light);
 }
 
 .shareInput {
@@ -83,16 +85,16 @@
   border: none;
   padding: 7px;
   border-radius: 5px;
-  background-color: green;
+  background-color: var(--tertiary-color);
   font-weight: 500;
   margin-right: 20px;
   cursor: pointer;
-  color: white;
+  color: var(--light);
   transition: all 0.4s;
 }
 
 .shareButton:hover {
-  background-color: rgb(25, 174, 25);
+  background-color: var(--tertiary-color-dark);
 }
 
 .postList {

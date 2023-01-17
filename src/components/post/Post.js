@@ -2,6 +2,7 @@ import classes from './Post.module.css';
 import { MoreVert } from '@mui/icons-material';
 import { Users } from '../../dummyData';
 import { useState } from 'react';
+import Comments from '../comments/Comments';
 
 function Post(props) {
   const [like, setLike] = useState(props.post.like);
@@ -106,7 +107,7 @@ function Post(props) {
           </div>
           <div className={classes.postBottomRight}>
             <span className={classes.postCommentText}>
-              {props.post.comment} comments
+              <Comments post={props.post} />
             </span>
           </div>
         </div>

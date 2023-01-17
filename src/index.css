@@ -2,3 +2,18 @@
   margin: 0;
   font-family: 'Roboto', sans-serif;
 }
+
+:root {
+  --primary-color: #1877f2;
+  --primary-color-dark: #034498;
+
+  --secondary-color: #f4a261;
+  --secondary-color-dark: #e57010;
+
+  --tertiary-color: #42b72a;
+  --tertiary-color-dark: #216d11;
+
+  --dark: #0f0f0f;
+  --light: #f9f9f9;
+  --grey: #e7e7e7;
+}

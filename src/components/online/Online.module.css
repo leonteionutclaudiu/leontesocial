@@ -1,3 +1,5 @@
+@import '../../index.css';
+
 .rightbarFriend {
   display: flex;
   align-items: center;
@@ -25,11 +27,11 @@
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  background-color: limegreen;
+  background-color: var(--tertiary-color);
   position: absolute;
   top: -2px;
   right: 0;
-  border: 2px solid white;
+  border: 2px solid var(--light);
 }
 
 .rightbarUsername {

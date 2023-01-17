@@ -1,12 +1,14 @@
+@import '../../index.css';
+
 .notificationBarContainer {
   display: flex;
   flex-direction: column;
-  height: 0;
+  height: 24px;
 }
 
 .notificationBar {
-  background-color: #3b5998;
-  color: black;
+  background-color: var(--primary-color-dark);
+  color: var(--dark);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   padding: 8px;
   border-radius: 3%;
@@ -17,9 +19,9 @@
   display: flex;
   align-items: center;
   padding: 8px;
-  border-bottom: 1px solid #e9e9e9;
-  background-color: #3b5998;
-  color: white;
+  border-bottom: 1px solid var(--grey);
+  background-color: var(--primary-color-dark);
+  color: var(--light);
 }
 
 .notification p {
@@ -37,12 +39,12 @@
 }
 
 .notificationBtn:hover {
-  color: yellow;
+  color: var(--secondary-color);
 }
 
 .notificationsBtn {
   background-color: transparent;
-  color: #fff;
+  color: var(--grey);
   border: none;
   cursor: pointer;
   transition: all 0.4s;
@@ -50,10 +52,10 @@
 }
 
 .notificationsBtn:hover {
-  color: rgb(233, 174, 65);
-  transform: scale(1.4);
+  color: var(--secondary-color);
+  transform: scale(1.3);
 }
 
 .black {
-  color: black;
+  color: var(--dark);
 }

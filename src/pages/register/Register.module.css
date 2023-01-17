@@ -1,7 +1,9 @@
+@import '../../index.css';
+
 .login {
   width: 100vw;
   height: 100vh;
-  background-color: #f0f2f5;
+  background-color: var(--light);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -26,7 +28,7 @@
 .loginLogo {
   font-size: 50px;
   font-weight: 800;
-  color: #1775ee;
+  color: var(--primary-color);
   margin-bottom: 10px;
 }
 
@@ -37,11 +39,11 @@
 .loginBox {
   height: 400px;
   padding: 20px;
-  background-color: white;
+  background-color: var(--grey);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 
 .loginInput {
@@ -60,8 +62,8 @@
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #1775ee;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--light);
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -69,7 +71,7 @@
 }
 
 .loginButton:hover {
-  background-color: #031d3f;
+  background-color: var(--primary-color-dark);
 }
 
 .loginRegisterButton {
@@ -78,8 +80,8 @@
   height: 50px;
   border-radius: 10px;
   border: none;
-  background-color: #42b72a;
-  color: white;
+  background-color: var(--tertiary-color);
+  color: var(--light);
   font-size: 20px;
   font-weight: 500;
   cursor: pointer;
@@ -87,5 +89,5 @@
 }
 
 .loginRegisterButton:hover {
-  background-color: #216d11;
+  background-color: var(--tertiary-color-dark);
 }

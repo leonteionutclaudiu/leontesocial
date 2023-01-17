@@ -1,5 +1,5 @@
 import classes from './Topbar.module.css';
-import { Chat, Diversity2, Home, Logout, Search } from '@mui/icons-material';
+import { Diversity2, Home, Logout } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import AddFriends from '../addFriends/AddFriends';
 import NotificationBar from '../notificationBar/NotificationBar';
@@ -16,10 +16,10 @@ function Topbar() {
         </span>
       </div>
       <div className={classes.topbarCenter}>
-        <div className={classes.searchBar}>
+        {/* <div className={classes.searchBar}>
           <Search className={classes.searchIcon} />
           <input className={classes.searchInput} placeholder="Search" />
-        </div>
+        </div> */}
       </div>
       <div className={classes.topbarRight}>
         <div className={classes.topbarLinks}>
@@ -38,10 +38,7 @@ function Topbar() {
           <div className={classes.topbarIconItem}>
             <AddFriends />
           </div>
-          <div className={classes.topbarIconItem}>
-            <Chat />
-            <span className={classes.topbarIconBadge}>2</span>
-          </div>
+
           <div className={classes.topbarIconItem}>
             <NotificationBar />
           </div>
