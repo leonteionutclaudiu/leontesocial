@@ -100,3 +100,13 @@
 .postList {
   padding: 0 20px 0 20px;
 }
+
+@media screen and (max-width: 1000px) {
+  .feed {
+    flex: 9.5;
+  }
+
+  .feedWrapper {
+    padding: 4px;
+  }
+}

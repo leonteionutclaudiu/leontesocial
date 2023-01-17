@@ -37,3 +37,21 @@
 .rightbarUsername {
   font-weight: 500;
 }
+
+@media screen and (max-width: 1000px) {
+  .rightbarProfileImgContainer {
+    margin-right: 0px;
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .rightbarUsername {
+    font-size: 12px;
+  }
+
+  .rightbarProfileImg {
+    width: 24px;
+    height: 24px;
+  }
+}

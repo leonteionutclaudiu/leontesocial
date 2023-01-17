@@ -32,16 +32,10 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  /* display: flex;
-  flex-direction: column;
-  flex-wrap: wrap; */
 }
 
 .sidebarListItem {
   display: flex;
-  /* flex-direction: column; */
-  /* flex-wrap: wrap; */
-  /* justify-content: start; */
   align-items: center;
   margin-bottom: 20px;
   cursor: pointer;
@@ -79,7 +73,63 @@
 .sidebarFriendList {
   display: flex;
   flex-direction: column;
+  flex-wrap: wrap;
   padding: 0;
   margin: 0;
   list-style: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .sidebar {
+    flex: 3;
+  }
+
+  .sidebarWrapper {
+    padding: 5px;
+  }
+
+  .sidebarButton {
+    max-width: 100px;
+    padding: 6px;
+  }
+
+  .sidebarListItemText {
+    font-size: 14px;
+  }
+
+  .sidebarIcon {
+    margin-right: 3px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .sidebarWrapper {
+    padding: 2px;
+  }
+
+  .sidebarButton {
+    max-width: 80px;
+  }
+
+  .sidebarListItemText {
+    font-size: 12px;
+  }
+
+  .sidebarIcon {
+    margin: 0;
+  }
+
+  .sidebarListItem {
+    flex-wrap: wrap;
+  }
+
+  .sidebarListItem {
+    max-width: 10px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .sidebarButton {
+    max-width: 50px;
+  }
 }

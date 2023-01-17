@@ -13,8 +13,7 @@
 }
 
 .topbarLeft {
-  flex: 2;
-  /* justify-self: flex-start; */
+  margin-right: 30px;
 }
 
 .logo {

@@ -102,3 +102,42 @@
 .rightbarFollowingImg:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 1000px) {
+  .rightbar {
+    flex: 1;
+  }
+
+  .rightbarWrapper {
+    padding: 0;
+  }
+
+  .birthdayImg {
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .birthdayText {
+    font-size: 12px;
+  }
+
+  .adText {
+    font-size: 14px;
+  }
+
+  .rightbarTitle {
+    font-size: 14px;
+  }
+
+  .birthdayContainer {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .birthdayImg {
+    margin-bottom: 6px;
+  }
+}

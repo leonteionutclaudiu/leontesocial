@@ -78,10 +78,6 @@ function Feed() {
                 Share
               </button>
             )}
-
-            {/* <button className={classes.shareButton} onClick={shareHandler}>
-              Share
-            </button> */}
           </div>
           <hr className={classes.shareHr} />
 

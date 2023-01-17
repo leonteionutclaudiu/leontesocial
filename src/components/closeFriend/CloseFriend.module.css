@@ -24,3 +24,34 @@
 .sidebarFriendImg:hover {
   transform: scale(1.2);
 }
+
+@media screen and (max-width: 700px) {
+  .sidebarFriend {
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+
+  .sidebarFriendImg {
+    margin-right: 2px;
+  }
+}
+
+@media screen and (max-width: 590px) {
+  .sidebarFriend {
+    font-size: 12px;
+    flex-wrap: wrap;
+  }
+
+  .sidebarFriendImg {
+    width: 20px;
+    height: 20px;
+    margin-right: 0px;
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .sidebarFriendImg {
+    width: 14px;
+    height: 14px;
+  }
+}
