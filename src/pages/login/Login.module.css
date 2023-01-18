@@ -123,17 +123,10 @@
 }
 
 .loginNow {
-  font-size: 24px;
-  background-color: var(--primary-color);
-  color: #fff;
-  border-radius: 10%;
-  padding: 10px 20px;
+  font-size: 36px;
+  font-weight: 500;
   text-decoration: none;
-  transition: all 0.3s;
-}
-
-.loginNow:hover {
-  background-color: var(--primary-color-dark);
+  animation: colorChangeAnimation 4s infinite linear;
 }
 
 .logoAndName {
@@ -170,5 +163,35 @@
   }
   100% {
     transform: translate(0);
+  }
+}
+
+@keyframes colorChangeAnimation {
+  0% {
+    color: var(--primary-color);
+    font-size: 28px;
+  }
+  20% {
+    color: var(--primary-color-dark);
+    font-size: 30px;
+  }
+  40% {
+    color: var(--secondary-color);
+    font-size: 32px;
+  }
+  60% {
+    color: var(--secondary-color-dark);
+    font-size: 34px;
+  }
+  80% {
+    color: var(--primary-color-dark);
+    font-size: 32px;
+  }
+  90% {
+    font-size: 30px;
+  }
+  100% {
+    color: var(--primary-color);
+    font-size: 28px;
   }
 }
