@@ -8,6 +8,7 @@
   gap: 20px;
   height: 100vh;
   background-color: var(--light);
+  overflow: hidden;
 }
 
 .loginInput {
@@ -99,7 +100,6 @@
   color: red;
   font-size: 18px;
   display: block;
-  padding: 40px 0;
   text-align: center;
 }
 
@@ -124,9 +124,19 @@
 
 .loginNow {
   font-size: 36px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
-  animation: colorChangeAnimation 4s infinite linear;
+  animation: fontChangeAnimation 4s infinite linear;
+  color: var(--dark);
+}
+
+.imSure {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  animation: changeBgColor 8s infinite linear;
 }
 
 .logoAndName {
@@ -141,6 +151,12 @@
   font-size: 40px;
   color: var(--dark);
   animation: vibrate 2s linear both infinite;
+}
+
+.alert {
+  width: 40%;
+  color: var(--light);
+  background-color: var(--tertiary-color-dark);
 }
 
 @keyframes vibrate {
@@ -166,32 +182,47 @@
   }
 }
 
-@keyframes colorChangeAnimation {
+@keyframes fontChangeAnimation {
   0% {
-    color: var(--primary-color);
-    font-size: 28px;
+    font-size: 120px;
   }
   20% {
-    color: var(--primary-color-dark);
-    font-size: 30px;
+    font-size: 110px;
   }
   40% {
-    color: var(--secondary-color);
-    font-size: 32px;
+    font-size: 100px;
   }
   60% {
-    color: var(--secondary-color-dark);
-    font-size: 34px;
+    font-size: 90px;
   }
   80% {
-    color: var(--primary-color-dark);
-    font-size: 32px;
+    font-size: 100px;
   }
   90% {
-    font-size: 30px;
+    font-size: 110px;
   }
   100% {
-    color: var(--primary-color);
-    font-size: 28px;
+    font-size: 120px;
+  }
+}
+
+@keyframes changeBgColor {
+  0% {
+    background-color: var(--primary-color);
+  }
+  20% {
+    background-color: var(--primary-color-dark);
+  }
+  40% {
+    background-color: var(--secondary-color);
+  }
+  60% {
+    background-color: var(--secondary-color-dark);
+  }
+  80% {
+    background-color: var(--primary-color-dark);
+  }
+  100% {
+    background-color: var(--primary-color);
   }
 }
