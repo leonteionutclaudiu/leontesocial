@@ -17,6 +17,12 @@
   margin-bottom: 20px;
 }
 
+.nameComment {
+  font-weight: bold;
+  font-style: italic;
+  color: var(--primary-color);
+}
+
 .commentBtn {
   cursor: pointer;
   border-bottom: 1px dashed var(--primary-color);

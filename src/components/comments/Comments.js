@@ -45,7 +45,7 @@ function Comments(props) {
             {comments.map((d, index) => {
               return (
                 <li key={index} className={classes.comment}>
-                  <strong>{d.email} : </strong>
+                  <span className={classes.nameComment}>{d.email} : </span>
                   {d.body}
                 </li>
               );

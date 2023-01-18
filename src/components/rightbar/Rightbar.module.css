@@ -70,7 +70,7 @@
 .rightbarInfoKey {
   font-weight: 500;
   margin-right: 15px;
-  color: var(--grey);
+  color: var(--dark);
 }
 
 .rightbarInfoValues {
@@ -92,8 +92,8 @@
 }
 
 .rightbarFollowingImg {
-  width: 100px;
-  height: 100px;
+  width: 40px;
+  height: 40px;
   object-fit: cover;
   border-radius: 5px;
   transition: all 0.4s;

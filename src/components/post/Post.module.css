@@ -92,10 +92,13 @@
 }
 
 .bigLike {
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   margin-right: 5px;
   transition: all 0.3s;
+
+  border: 3px solid var(--primary-color);
+  border-radius: 50%;
 
   cursor: pointer;
 }
@@ -109,5 +112,5 @@
 }
 
 .smallLike:hover {
-  transform: translateY(-5px);
+  transform: translateY(-4px);
 }
