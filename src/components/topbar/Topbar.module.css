@@ -27,7 +27,7 @@
 }
 
 .logo:hover {
-  color: var(--tertiary-color);
+  color: var(--dark);
 }
 
 .logoIcon {
@@ -43,18 +43,9 @@
   color: var(--light);
 }
 
-.topbarLink {
-  margin-right: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  text-decoration: none;
-  color: var(--light);
-}
-
 .topbarIcons {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
 }
 
 .topbarIconItem {
@@ -80,17 +71,22 @@
 
 .homeIcon,
 .logoutIcon {
+  margin-right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+  text-decoration: none;
+  color: var(--light);
   transition: all 0.4s;
 }
 
 .homeIcon:hover {
   color: var(--tertiary-color);
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 .logoutIcon:hover {
   color: red;
-  transform: scale(1.4);
+  transform: scale(1.3);
 }
 
 @keyframes vibrate {
@@ -102,6 +98,8 @@
   }
   40% {
     transform: translate(-2px, -2px);
+    filter: blur(1px);
+    color: var(--dark);
   }
   60% {
     transform: translate(2px, 2px);

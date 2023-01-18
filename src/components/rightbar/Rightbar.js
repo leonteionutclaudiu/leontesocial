@@ -12,14 +12,6 @@ function Rightbar({ profile }) {
             <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today.
           </span>
         </div>
-        <div className={classes.adContainer}>
-          <h4 className={classes.adText}>Sponsored</h4>
-          <img
-            className={classes.rightbarAd}
-            src="/assets/ad.jpg"
-            alt="Ad img"
-          />
-        </div>
         <h4 className={classes.rightbarTitle}>Online Friends</h4>
         <ul className={classes.rightbarFriendList}>
           {/* u.id=1 is for current user ;
@@ -28,6 +20,29 @@ function Rightbar({ profile }) {
             return <Online key={u.id} user={u} />;
           })}
         </ul>
+        <div className={classes.adContainer}>
+          <h4 className={classes.adText}>Sponsored</h4>
+          <img
+            className={classes.rightbarAd}
+            src="https://www.europafm.ro/wp-content/uploads/2021/09/vizual-concurs-eMAG.png"
+            alt="Ad img"
+          />
+          <img
+            className={classes.rightbarAd}
+            src="https://i.ytimg.com/vi/-Ii2kFWhRlc/maxresdefault.jpg"
+            alt="Ad img"
+          />
+          <img
+            className={classes.rightbarAd}
+            src="https://media.kaufland.com/images/PPIM/AP_Alphacontent/AP_Alphacontent_1010/rum/52/57/Asset_3455257.png"
+            alt="Ad img"
+          />
+          <img
+            className={classes.rightbarAd}
+            src="https://i.kym-cdn.com/photos/images/original/000/326/428/033.jpg"
+            alt="Ad img"
+          />
+        </div>
       </>
     );
   };

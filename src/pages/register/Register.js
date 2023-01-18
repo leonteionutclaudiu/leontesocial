@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import classes from './Register.module.css';
 import { useState } from 'react';
 import { database } from '../login/Login';
+import { Diversity2 } from '@mui/icons-material';
 
 function Register() {
   const [mailInput, setMailInput] = useState('');
@@ -36,7 +37,10 @@ function Register() {
     <div className={classes.login}>
       <div className={classes.loginWrapper}>
         <div className={classes.loginLeft}>
-          <h3 className={classes.loginLogo}>LeonteSocial</h3>
+          <div className={classes.logoAndName}>
+            <Diversity2 className={classes.logoIcon} />
+            <h3 className={classes.loginLogo}>LeonteSocial</h3>
+          </div>
           <span className={classes.loginDesc}>
             Connect with friends and the world around you on LeonteSocial
           </span>

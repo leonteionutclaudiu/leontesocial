@@ -135,3 +135,40 @@
 .loginNow:hover {
   background-color: var(--primary-color-dark);
 }
+
+.logoAndName {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.logoIcon {
+  font-size: 40px;
+  color: var(--dark);
+  animation: vibrate 2s linear both infinite;
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-4px, 4px);
+  }
+  40% {
+    transform: translate(-4px, -4px);
+    filter: blur(4px);
+    color: var(--primary-color);
+  }
+  60% {
+    transform: translate(4px, 4px);
+  }
+  80% {
+    transform: translate(4px, -4px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}

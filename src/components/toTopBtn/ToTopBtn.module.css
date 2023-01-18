@@ -1,0 +1,30 @@
+@import '../../index.css';
+
+.scrollToTopButton {
+  position: sticky;
+  bottom: 0px;
+  left: 100%;
+  transform: translateX(24px);
+  background-color: var(--primary-color);
+  color: var(--light);
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid var(--dark);
+  transition: all 0.4s;
+}
+
+.scrollToTopButton:hover {
+  background-color: var(--primary-color-dark);
+  border: 2px solid var(--light);
+}
+
+.icon {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  margin: 0 auto;
+}

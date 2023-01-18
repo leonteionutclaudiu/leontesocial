@@ -3,6 +3,7 @@ import { Diversity2, Home, Logout } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
 import AddFriends from '../addFriends/AddFriends';
 import NotificationBar from '../notificationBar/NotificationBar';
+import Searchbar from '../searchbar/Searchbar';
 
 function Topbar() {
   return (
@@ -16,10 +17,7 @@ function Topbar() {
         </span>
       </div>
       <div className={classes.topbarCenter}>
-        {/* <div className={classes.searchBar}>
-          <Search className={classes.searchIcon} />
-          <input className={classes.searchInput} placeholder="Search" />
-        </div> */}
+        <Searchbar />
       </div>
       <div className={classes.topbarRight}>
         <div className={classes.topbarLinks}>

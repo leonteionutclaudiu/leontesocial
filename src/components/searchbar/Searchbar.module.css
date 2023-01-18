@@ -1,0 +1,26 @@
+.searchBar {
+  width: 60%;
+  min-width: 34px;
+  height: 30px;
+  background-color: white;
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  cursor: not-allowed;
+}
+
+.searchIcon {
+  font-size: 20px !important;
+  margin-left: 10px;
+}
+
+.searchInput {
+  border: none;
+  width: 100%;
+  background-color: transparent;
+  cursor: not-allowed;
+}
+
+.searchInput:focus {
+  outline: none;
+}

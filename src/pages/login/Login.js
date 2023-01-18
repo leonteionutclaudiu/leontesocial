@@ -1,3 +1,4 @@
+import { Diversity2 } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import classes from './Login.module.css';
@@ -55,7 +56,10 @@ function Login() {
   // JSX code for login form
   const renderForm = (
     <div className={classes.form}>
-      <span className={classes.logo}>LeonteSocial</span>
+      <div className={classes.logoAndName}>
+        <Diversity2 className={classes.logoIcon} />
+        <span className={classes.logo}>LeonteSocial</span>
+      </div>
 
       <form onSubmit={handleSubmit}>
         <div className={classes.inputContainer}>

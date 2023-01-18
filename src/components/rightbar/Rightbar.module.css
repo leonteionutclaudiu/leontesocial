@@ -6,6 +6,7 @@
 
 .rightbarWrapper {
   padding: 20px 20px 0 0;
+  height: 100%;
 }
 
 .birthdayContainer {
@@ -26,6 +27,8 @@
 
 .adContainer {
   margin-top: 30px;
+  position: sticky;
+  top: 50px;
 }
 
 .adText {
@@ -40,11 +43,13 @@
 }
 
 .rightbarAd:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
+  filter: grayscale(50%);
 }
 
 .rightbarTitle {
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .rightbarFriendList {
