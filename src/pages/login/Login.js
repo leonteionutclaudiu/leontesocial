@@ -1,7 +1,7 @@
 import { Diversity2 } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { Alert } from 'react-bootstrap';
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import classes from './Login.module.css';
 
 // User Login info
