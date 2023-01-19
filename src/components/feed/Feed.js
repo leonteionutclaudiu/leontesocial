@@ -3,7 +3,6 @@ import { useState } from 'react';
 import { Posts } from '../../dummyData';
 import Post from '../../components/post/Post';
 import { Alert } from 'react-bootstrap';
-import ToTopBtn from '../toTopBtn/ToTopBtn';
 
 function Feed() {
   const [newPost, setNewPost] = useState('');
@@ -97,7 +96,6 @@ function Feed() {
             {posts.reverse().map((post) => {
               return <Post key={post.id} post={post} />;
             })}
-            <ToTopBtn />
           </ul>
         </div>
       </div>

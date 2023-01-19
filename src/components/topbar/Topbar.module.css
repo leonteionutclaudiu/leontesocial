@@ -10,6 +10,7 @@
   position: sticky;
   top: 0;
   z-index: 999;
+  padding: 0 20px;
 }
 
 .topbarLeft {
@@ -17,8 +18,11 @@
 }
 
 .logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   font-size: 24px;
-  margin-left: 20px;
   font-weight: bold;
   color: var(--light);
   cursor: pointer;
@@ -109,5 +113,22 @@
   }
   100% {
     transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 650px) {
+  .logo {
+    font-size: 17px;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+  .logoIcon {
+    padding: 2.5px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .logo {
+    gap: 0px;
   }
 }
