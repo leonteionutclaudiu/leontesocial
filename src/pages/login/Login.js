@@ -1,7 +1,7 @@
-import { Diversity2, LoginOutlined } from '@mui/icons-material';
+import { Diversity2 } from '@mui/icons-material';
 import React, { useState } from 'react';
 import { Alert } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import classes from './Login.module.css';
 
 // User Login info
@@ -17,14 +17,21 @@ export const database = [
 ];
 
 function Login() {
-  // React States
   const [errorMessages, setErrorMessages] = useState('');
-  const [isSubmitted, setIsSubmitted] = useState(false);
+
+  const navigate = useNavigate();
 
   const [forgot, setForgot] = useState(false);
 
+  function loadingHandler() {
+    navigate('/loading');
+
+    setTimeout(() => {
+      navigate('/register');
+    }, 500);
+  }
+
   const handleSubmit = (event) => {
-    //Prevent page reload
     event.preventDefault();
 
     let { email, pass } = document.forms[0];
@@ -38,7 +45,10 @@ function Login() {
         // Invalid password
         setErrorMessages('Email or password incorrect!');
       } else {
-        setIsSubmitted(true);
+        navigate('/loading');
+        setTimeout(() => {
+          navigate('/home');
+        }, 1000);
       }
     } else {
       // Email not found
@@ -57,8 +67,7 @@ function Login() {
     }, 5000);
   };
 
-  // JSX code for login form
-  const renderForm = (
+  return (
     <div className={classes.login}>
       <div className={classes.loginForm}>
         <div className={classes.form}>
@@ -94,9 +103,12 @@ function Login() {
               >
                 Log in
               </button>
-              <Link to="/register" className={classes.loginRegisterButton}>
+              <div
+                className={classes.loginRegisterButton}
+                onClick={loadingHandler}
+              >
                 Sign up
-              </Link>
+              </div>
               <div className={classes.forgot} onClick={forgotHandler}>
                 Forgot your password?
               </div>
@@ -114,20 +126,6 @@ function Login() {
         </div>
       </div>
     </div>
-  );
-
-  return (
-    <>
-      {isSubmitted ? (
-        <div className={classes.imSure}>
-          <Link to="/home">
-            <LoginOutlined className={classes.loginNow} />
-          </Link>
-        </div>
-      ) : (
-        renderForm
-      )}
-    </>
   );
 }
 

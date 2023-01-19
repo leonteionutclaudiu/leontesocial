@@ -1,4 +1,4 @@
-import { Link, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import classes from './Register.module.css';
 import { useState } from 'react';
 import { database } from '../login/Login';
@@ -10,7 +10,15 @@ function Register() {
 
   const navigate = useNavigate();
 
-  const signUpHandler = (event) => {
+  function loadingHandler2() {
+    navigate('/loading');
+
+    setTimeout(() => {
+      navigate('/');
+    }, 500);
+  }
+
+  const loadingHandler = (event) => {
     event.preventDefault();
 
     database.push({
@@ -18,11 +26,11 @@ function Register() {
       password: passwordInput,
     });
 
-    alert('Please log in now!');
+    navigate('/loading');
 
-    navigate('/');
-
-    console.log(database);
+    setTimeout(() => {
+      navigate('/');
+    }, 1000);
   };
 
   const handleMailChange = (e) => {
@@ -46,7 +54,7 @@ function Register() {
           </span>
         </div>
         <div className={classes.loginRight}>
-          <form onSubmit={signUpHandler} className={classes.loginBox}>
+          <form onSubmit={loadingHandler} className={classes.loginBox}>
             <input
               placeholder="Email"
               type="email"
@@ -65,11 +73,12 @@ function Register() {
             />
 
             <button className={classes.loginButton}>Sign up</button>
-            <Link to="/">
-              <button className={classes.loginRegisterButton}>
-                Log into Account
-              </button>
-            </Link>
+            <button
+              className={classes.loginRegisterButton}
+              onClick={loadingHandler2}
+            >
+              Log into Account
+            </button>
           </form>
         </div>
       </div>

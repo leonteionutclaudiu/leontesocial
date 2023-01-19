@@ -1,0 +1,15 @@
+@import '../../index.css';
+
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: var(--dark);
+}
+
+.spinner {
+  height: 200px !important;
+  width: 200px !important;
+  color: var(--primary-color) !important;
+}
