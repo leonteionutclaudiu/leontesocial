@@ -1,5 +1,5 @@
 import classes from './Post.module.css';
-import { MoreVert } from '@mui/icons-material';
+import { DeleteForever } from '@mui/icons-material';
 import { Users } from '../../dummyData';
 import { useState } from 'react';
 import Comments from '../comments/Comments';
@@ -64,7 +64,9 @@ function Post(props) {
             <span className={classes.postDate}>{props.post.date}</span>
           </div>
           <div className={classes.postTopRight}>
-            <MoreVert />
+            <span onClick={props.onDelete}>
+              <DeleteForever />
+            </span>
           </div>
         </div>
         <div className={classes.postCenter}>

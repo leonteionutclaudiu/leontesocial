@@ -25,6 +25,15 @@
   align-items: center;
 }
 
+.postTopRight {
+  cursor: pointer;
+  transition: all 0.4s;
+}
+
+.postTopRight:hover {
+  color: var(--primary-color-dark);
+}
+
 .postProfileImg {
   width: 32px;
   height: 32px;

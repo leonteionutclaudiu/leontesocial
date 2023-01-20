@@ -25,9 +25,11 @@ function Feed() {
     posts.reverse();
 
     setNewPost('');
+  }
 
-    console.log(post);
-    console.log(posts);
+  function handleDelete(id) {
+    const updatedPosts = posts.filter((post) => post.id !== id);
+    setPosts(updatedPosts);
   }
 
   function shareHandler() {
@@ -94,7 +96,13 @@ function Feed() {
           )}
           <ul className={classes.postList}>
             {posts.reverse().map((post) => {
-              return <Post key={post.id} post={post} />;
+              return (
+                <Post
+                  key={post.id}
+                  post={post}
+                  onDelete={() => handleDelete(post.id)}
+                />
+              );
             })}
           </ul>
         </div>
