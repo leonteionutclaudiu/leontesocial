@@ -8,7 +8,6 @@ function Post(props) {
   const [like, setLike] = useState(props.post.like);
   const [isLiked, setIsLiked] = useState(false);
   const [text, setText] = useState('people like it');
-  const [isLoved, setIsLoved] = useState(false);
 
   const likeHandler = () => {
     setLike(isLiked ? like - 1 : like + 1);
@@ -16,18 +15,6 @@ function Post(props) {
 
     if (!isLiked) {
       setText('people like it (you like it)');
-    } else {
-      setText('people like it');
-    }
-  };
-
-  const loveHandler = () => {
-    setLike(isLiked ? like - 1 : like + 1);
-    setIsLiked(!isLiked);
-    setIsLoved(!isLiked);
-
-    if (!isLoved) {
-      setText('people like it (you love it)');
     } else {
       setText('people like it');
     }
@@ -50,8 +37,8 @@ function Post(props) {
             ) : (
               <img
                 className={classes.postProfileImg}
-                src="https://images.unsplash.com/photo-1456327102063-fb5054efe647?ixlib=rb-0.3.5&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&s=f05c14dd4db49f08a789e6449604c490"
-                alt="Test img"
+                src="https://iili.io/HcGSW22.jpg"
+                alt="Profile img"
               />
             )}
             {props.post.userId ? (
@@ -85,7 +72,7 @@ function Post(props) {
           <div className={classes.postBottomLeft}>
             <img
               className={
-                classes.likeIcon && isLiked && !isLoved
+                classes.likeIcon && isLiked
                   ? classes.bigLike
                   : classes.smallLike
               }
@@ -93,16 +80,7 @@ function Post(props) {
               alt="like icon"
               onClick={likeHandler}
             />
-            <img
-              className={
-                classes.likeIcon && isLoved
-                  ? classes.bigLike
-                  : classes.smallLike
-              }
-              src="assets/heart.png"
-              alt="heart icon"
-              onClick={loveHandler}
-            />
+
             <span className={classes.postLikeCounter}>
               {like} {text}
             </span>

@@ -1,58 +1,64 @@
 const Users = [
   {
     id: 1,
-    profilePicture: 'assets/person/1.jpeg',
+    profilePicture:
+      'https://images.pexels.com/photos/638700/pexels-photo-638700.jpeg?h=350&auto=compress&cs=tinysrgb',
     username: 'Safak Kocaoglu',
   },
   {
     id: 2,
-    profilePicture: 'assets/person/2.jpeg',
+    profilePicture:
+      'https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
     username: 'Janell Shrum',
   },
   {
     id: 3,
-    profilePicture: 'assets/person/3.jpeg',
+    profilePicture: 'https://randomuser.me/api/portraits/men/52.jpg',
     username: 'Alex Durden',
   },
   {
     id: 4,
-    profilePicture: 'assets/person/4.jpeg',
+    profilePicture:
+      'https://images.pexels.com/photos/531126/pexels-photo-531126.jpeg?h=350&auto=compress&cs=tinysrgb',
     username: 'Dora Hawks',
   },
   {
     id: 5,
-    profilePicture: 'assets/person/5.jpeg',
+    profilePicture:
+      'https://images.unsplash.com/photo-1503593245033-a040be3f3c82?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=ca8c652b62b1f14c9c4c969289a8b33c',
     username: 'Thomas Holden',
   },
   {
     id: 6,
-    profilePicture: 'assets/person/6.jpeg',
+    profilePicture:
+      'https://images.unsplash.com/photo-1520813792240-56fc4a3765a7?ixlib=rb-1.2.1&q=80&fm=jpg&crop=faces&fit=crop&h=200&w=200&ixid=eyJhcHBfaWQiOjE3Nzg0fQ',
     username: 'Shirley Beauchamp',
   },
   {
     id: 7,
-    profilePicture: 'assets/person/7.jpeg',
+    profilePicture: 'https://randomuser.me/api/portraits/men/36.jpg',
     username: 'Travis Bennett',
   },
   {
     id: 8,
-    profilePicture: 'assets/person/8.jpeg',
-    username: 'Kristen Thomas',
+    profilePicture: 'https://randomuser.me/api/portraits/men/46.jpg',
+    username: 'Christian Thomas',
   },
   {
     id: 9,
-    profilePicture: 'assets/person/9.jpeg',
-    username: 'Gary Duty',
+    profilePicture: 'https://randomuser.me/api/portraits/women/95.jpg',
+    username: 'Daiana Paulo',
   },
   {
     id: 10,
-    profilePicture: 'assets/person/10.jpeg',
-    username: 'Safak Kocaoglu',
+    profilePicture:
+      'https://images.unsplash.com/photo-1505503693641-1926193e8d57?ixlib=rb-0.3.5&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=200&fit=max&s=3422df4a46d2c81c35bf4687a2fa9c52',
+    username: 'Iulius Alvarez',
   },
   {
     id: 11,
-    profilePicture: 'assets/person/11.jpg',
-    username: 'Marian Tanase',
+    profilePicture: 'https://randomuser.me/api/portraits/men/23.jpg',
+    username: 'Alexius Pavalic',
   },
 ];
 

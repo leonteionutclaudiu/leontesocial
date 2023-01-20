@@ -7,16 +7,18 @@ function Rightbar({ profile }) {
     return (
       <>
         <div className={classes.birthdayContainer}>
-          <img className={classes.birthdayImg} src="/assets/gift.png" alt="" />
+          <img
+            className={classes.birthdayImg}
+            src="/assets/gift.png"
+            alt="birthday img"
+          />
           <span className={classes.birthdayText}>
             <b>Pola Foster</b> and <b>3 other friends</b> have a birthday today.
           </span>
         </div>
         <h4 className={classes.rightbarTitle}>Online Friends</h4>
         <ul className={classes.rightbarFriendList}>
-          {/* u.id=1 is for current user ;
-              Show only even id's friends as online */}
-          {Users.filter((u) => u.id !== 1 && u.id % 2 === 0).map((u) => {
+          {Users.map((u) => {
             return <Online key={u.id} user={u} />;
           })}
         </ul>
@@ -53,67 +55,37 @@ function Rightbar({ profile }) {
         <h4 className={classes.rightbarTitle}>User Information </h4>
         <div className={classes.rightbarInfo}>
           <div className={classes.rightbarInfoItem}>
+            <span className={classes.rightbarInfoKey}>Country:</span>
+            <span className={classes.rightbarInfoValue}>Romania</span>
+          </div>
+          <div className={classes.rightbarInfoItem}>
             <span className={classes.rightbarInfoKey}>City:</span>
-            <span className={classes.rightbarInfoValue}>NewYork</span>
+            <span className={classes.rightbarInfoValue}>Bucharest</span>
           </div>
           <div className={classes.rightbarInfoItem}>
             <span className={classes.rightbarInfoKey}>From:</span>
-            <span className={classes.rightbarInfoValue}>Madrid</span>
+            <span className={classes.rightbarInfoValue}>Braila</span>
           </div>
           <div className={classes.rightbarInfoItem}>
             <span className={classes.rightbarInfoKey}>Relationship:</span>
             <span className={classes.rightbarInfoValue}>Single</span>
           </div>
-        </div>
-        <h4 className={classes.rightbarTitle}>User friends</h4>
-        <div className={classes.rightbarFollowings}>
-          <div className={classes.rightbarFollowing}>
-            <img
-              className={classes.rightbarFollowingImg}
-              src="assets/person/1.jpeg"
-              alt=""
-            />
-            <span className={classes.rightbarFollowingName}></span>
+          <div className={classes.rightbarInfoItem}>
+            <span className={classes.rightbarInfoKey}>Email:</span>
+            <span className={classes.rightbarInfoValue}>
+              leonteionut98@yahoo.com
+            </span>
           </div>
-          <div className={classes.rightbarFollowing}>
-            <img
-              className={classes.rightbarFollowingImg}
-              src="assets/person/2.jpeg"
-              alt=""
-            />
-            <span className={classes.rightbarFollowingName}></span>
-          </div>
-          <div className={classes.rightbarFollowing}>
-            <img
-              className={classes.rightbarFollowingImg}
-              src="assets/person/3.jpeg"
-              alt=""
-            />
-            <span className={classes.rightbarFollowingName}></span>
-          </div>
-          <div className={classes.rightbarFollowing}>
-            <img
-              className={classes.rightbarFollowingImg}
-              src="assets/person/4.jpeg"
-              alt=""
-            />
-            <span className={classes.rightbarFollowingName}></span>
-          </div>
-          <div className={classes.rightbarFollowing}>
-            <img
-              className={classes.rightbarFollowingImg}
-              src="assets/person/5.jpeg"
-              alt=""
-            />
-            <span className={classes.rightbarFollowingName}></span>
-          </div>
-          <div className={classes.rightbarFollowing}>
-            <img
-              className={classes.rightbarFollowingImg}
-              src="assets/person/6.jpeg"
-              alt=""
-            />
-            <span className={classes.rightbarFollowingName}></span>
+          <div className={classes.rightbarInfoItem}>
+            <span className={classes.rightbarInfoKey}>Website:</span>
+            <a
+              href="https://leonte-portfolio.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+              className={classes.rightbarInfoValue}
+            >
+              My-Portfolio
+            </a>
           </div>
         </div>
       </>

@@ -79,6 +79,14 @@
   list-style: none;
 }
 
+.closeFriends {
+  padding: 4px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--tertiary-color-dark);
+}
+
 @media screen and (max-width: 1000px) {
   .sidebar {
     flex: 3;

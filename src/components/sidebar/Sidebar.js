@@ -59,7 +59,8 @@ function Sidebar() {
         <button className={classes.sidebarButton}>Show More</button>
         <hr className={classes.sidebarHr} />
         <ul className={classes.sidebarFriendList}>
-          {Users.map((u) => {
+          <span className={classes.closeFriends}>Close friends</span>
+          {Users.filter((u) => u.id !== 1 && u.id % 2 === 0).map((u) => {
             return <CloseFriend key={u.id} user={u} />;
           })}
         </ul>
