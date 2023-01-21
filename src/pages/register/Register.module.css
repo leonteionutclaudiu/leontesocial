@@ -7,12 +7,15 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
 }
 
 .loginWrapper {
   width: 70%;
   height: 70%;
   display: flex;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
 }
 
@@ -126,5 +129,15 @@
   }
   100% {
     transform: translate(0);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .loginLogo {
+    font-size: 36px;
+  }
+
+  .loginDesc {
+    font-size: 20px;
   }
 }

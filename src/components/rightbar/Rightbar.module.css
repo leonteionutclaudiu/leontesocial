@@ -60,8 +60,9 @@
 
 .rightbarTitle {
   font-size: 18px;
-  font-weight: 500;
-  margin-bottom: 10px;
+  font-weight: bold;
+  font-style: italic;
+  margin: 20px 0;
 }
 
 .rightbarInfo {
@@ -70,15 +71,17 @@
 
 .rightbarInfoItem {
   margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
 }
 
 .rightbarInfoKey {
   font-weight: 500;
-  margin-right: 15px;
-  color: var(--dark);
 }
 
-.rightbarInfoValues {
+.rightbarInfoValue {
   font-weight: 300;
 }
 
@@ -89,52 +92,14 @@
   overflow: hidden;
 }
 
-.rightbarFollowing {
-  display: flex;
-  flex-direction: column;
+.iconArrow {
+  color: var(--primary-color-dark);
   margin-bottom: 20px;
-  cursor: pointer;
-}
-
-.rightbarFollowingImg {
-  width: 40px;
-  height: 40px;
-  object-fit: cover;
-  border-radius: 5px;
-  transition: all 0.4s;
-}
-
-.rightbarFollowingImg:hover {
-  transform: scale(1.2);
 }
 
 @media screen and (max-width: 1000px) {
-  .rightbar {
-    flex: 1;
-  }
-
   .rightbarWrapper {
     padding: 0;
-  }
-
-  .birthdayImg {
-    width: 30px;
-    height: 30px;
-    margin-right: 4px;
-  }
-}
-
-@media screen and (max-width: 700px) {
-  .birthdayText {
-    font-size: 12px;
-  }
-
-  .adText {
-    font-size: 14px;
-  }
-
-  .rightbarTitle {
-    font-size: 14px;
   }
 
   .birthdayContainer {
@@ -143,6 +108,34 @@
   }
 
   .birthdayImg {
-    margin-bottom: 6px;
+    width: 30px;
+    height: 30px;
+    margin-right: 4px;
+  }
+
+  .birthdayText {
+    font-size: 12px;
+  }
+
+  .adText {
+    font-size: 14px;
+  }
+
+  .rightbarInfoKey {
+    margin-right: 4px;
+    color: var(--dark);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .rightbarTitle {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .rightbarInfoValue {
+    word-wrap: break-word;
+    max-width: 11ch;
   }
 }

@@ -87,7 +87,7 @@
   color: var(--tertiary-color-dark);
 }
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) and (min-width: 600px) {
   .sidebar {
     flex: 3;
   }
@@ -97,7 +97,7 @@
   }
 
   .sidebarButton {
-    max-width: 100px;
+    width: 100px;
     padding: 6px;
   }
 
@@ -107,37 +107,5 @@
 
   .sidebarIcon {
     margin-right: 3px;
-  }
-}
-
-@media screen and (max-width: 590px) {
-  .sidebarWrapper {
-    padding: 2px;
-  }
-
-  .sidebarButton {
-    max-width: 80px;
-  }
-
-  .sidebarListItemText {
-    font-size: 12px;
-  }
-
-  .sidebarIcon {
-    margin: 0;
-  }
-
-  .sidebarListItem {
-    flex-wrap: wrap;
-  }
-
-  .sidebarListItem {
-    max-width: 10px;
-  }
-}
-
-@media screen and (max-width: 530px) {
-  .sidebarButton {
-    max-width: 50px;
   }
 }

@@ -1,6 +1,7 @@
 import classes from './Rightbar.module.css';
 import { Users } from '../../dummyData';
 import Online from '../online/Online';
+import { SouthOutlined } from '@mui/icons-material';
 
 function Rightbar({ profile }) {
   const HomeRightbar = () => {
@@ -52,7 +53,8 @@ function Rightbar({ profile }) {
   const ProfileRightbar = () => {
     return (
       <>
-        <h4 className={classes.rightbarTitle}>User Information </h4>
+        <h4 className={classes.rightbarTitle}>User Informations</h4>
+        <SouthOutlined className={classes.iconArrow} />
         <div className={classes.rightbarInfo}>
           <div className={classes.rightbarInfoItem}>
             <span className={classes.rightbarInfoKey}>Country:</span>
@@ -65,10 +67,6 @@ function Rightbar({ profile }) {
           <div className={classes.rightbarInfoItem}>
             <span className={classes.rightbarInfoKey}>From:</span>
             <span className={classes.rightbarInfoValue}>Braila</span>
-          </div>
-          <div className={classes.rightbarInfoItem}>
-            <span className={classes.rightbarInfoKey}>Relationship:</span>
-            <span className={classes.rightbarInfoValue}>Single</span>
           </div>
           <div className={classes.rightbarInfoItem}>
             <span className={classes.rightbarInfoKey}>Email:</span>

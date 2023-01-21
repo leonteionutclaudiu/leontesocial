@@ -28,9 +28,16 @@
   border-bottom: 1px dashed var(--primary-color);
   font-size: 15px;
   transition: all 0.4s;
+  font-weight: bold;
 }
 
 .commentBtn:hover {
   color: var(--secondary-color-dark);
   border-bottom: 1px dashed var(--primary-color-dark);
+}
+
+@media screen and (max-width: 590px) {
+  .commentBtn {
+    font-size: 12px;
+  }
 }

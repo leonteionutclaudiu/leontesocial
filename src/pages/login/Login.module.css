@@ -154,7 +154,7 @@
 }
 
 .alert {
-  width: 40%;
+  width: 90%;
   color: var(--light);
   background-color: var(--tertiary-color-dark);
 }

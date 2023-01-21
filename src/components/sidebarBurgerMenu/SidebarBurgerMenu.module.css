@@ -1,0 +1,42 @@
+.menu {
+  position: fixed;
+  top: 0px;
+  max-width: 100%;
+  z-index: 10000;
+}
+
+.burgerMenu {
+  cursor: pointer;
+  color: var(--primary-color);
+  background-color: var(--dark);
+  border-radius: 50%;
+  padding: 1px;
+  text-align: center;
+  width: 30px;
+  transition: all 0.4s;
+  position: sticky;
+  /* top: 60px; */
+  right: 100%;
+  z-index: 10000;
+}
+
+.burgerMenu:hover {
+  color: var(--primary-color-dark);
+  background-color: var(--light);
+  transform: scale(1.15);
+}
+
+.sidebar {
+  background-image: linear-gradient(
+    var(--primary-color),
+    var(--secondary-color)
+  );
+  color: var(--dark);
+  filter: opacity(97%);
+  width: 100vw;
+}
+
+.burgerOpen {
+  color: var(--primary-color-dark);
+  background-color: var(--secondary-color-dark);
+}

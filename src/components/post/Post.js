@@ -81,9 +81,9 @@ function Post(props) {
               onClick={likeHandler}
             />
 
-            <span className={classes.postLikeCounter}>
-              {like} {text}
-            </span>
+            <p className={classes.postLikeCounter}>
+              <strong>{like}</strong> {text}
+            </p>
           </div>
           <div className={classes.postBottomRight}>
             <span className={classes.postCommentText}>

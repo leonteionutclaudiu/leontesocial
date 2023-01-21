@@ -123,3 +123,13 @@
 .smallLike:hover {
   transform: translateY(-4px);
 }
+
+@media screen and (max-width: 590px) {
+  .postText {
+    font-size: 14px;
+  }
+
+  .postLikeCounter {
+    font-size: 12px;
+  }
+}

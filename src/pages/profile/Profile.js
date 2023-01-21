@@ -4,12 +4,20 @@ import Sidebar from '../../components/sidebar/Sidebar';
 import Topbar from '../../components/topbar/Topbar';
 import classes from './Profile.module.css';
 
+import MediaQuery from 'react-responsive';
+import SidebarBurgerMenu from '../../components/sidebarBurgerMenu/SidebarBurgerMenu';
+
 function Profile() {
   return (
     <>
       <Topbar />
       <div className={classes.profile}>
-        <Sidebar />
+        <MediaQuery maxWidth={600}>
+          <SidebarBurgerMenu />
+        </MediaQuery>
+        <MediaQuery minWidth={601}>
+          <Sidebar />
+        </MediaQuery>
         <div className={classes.profileRight}>
           <div className={classes.profileRightTop}>
             <div className={classes.profileCover}>
@@ -26,7 +34,7 @@ function Profile() {
             </div>
             <div className={classes.profileInfo}>
               <h4 className={classes.profileInfoName}>Leonte Ionut</h4>
-              <span className={classes.profileInfoDesc}>Hello my friends!</span>
+              <span className={classes.profileInfoDesc}>Hello 🙂!</span>
             </div>
           </div>
           <div className={classes.profileRightBottom}>
