@@ -9,6 +9,7 @@ function Feed() {
   const [posts, setPosts] = useState(Posts);
   const [showShareAlert, setShowShareAlert] = useState(false);
   const [showShareError, setShowShareError] = useState(false);
+  const [showDeleteAlert, setShowDeleteAlert] = useState(false);
 
   function addPost() {
     const post = {
@@ -30,6 +31,10 @@ function Feed() {
   function handleDelete(id) {
     const updatedPosts = posts.filter((post) => post.id !== id);
     setPosts(updatedPosts);
+    setShowDeleteAlert(true);
+    setTimeout(() => {
+      setShowDeleteAlert(false);
+    }, 5000);
   }
 
   function shareHandler() {
@@ -94,6 +99,15 @@ function Feed() {
           ) : (
             ''
           )}
+
+          {showDeleteAlert ? (
+            <Alert variant="info">
+              You have successfully deleted this post!
+            </Alert>
+          ) : (
+            ''
+          )}
+
           <ul className={classes.postList}>
             {posts.reverse().map((post) => {
               return (

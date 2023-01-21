@@ -59,3 +59,21 @@
 .black {
   color: var(--dark);
 }
+
+@media screen and (max-width: 500px) {
+  .notificationBar {
+    padding: 0;
+  }
+
+  .notification {
+    padding: 2px;
+  }
+
+  .notification p {
+    font-size: 12px;
+  }
+
+  .notificationBtn {
+    margin: 0;
+  }
+}
