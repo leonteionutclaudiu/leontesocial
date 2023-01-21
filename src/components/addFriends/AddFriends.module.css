@@ -85,7 +85,7 @@
   color: var(--secondary-color);
 }
 
-@media screen and (max-width: 540px) {
+/* @media screen and (max-width: 540px) {
   .person {
     padding: 2px;
   }
@@ -103,4 +103,4 @@
   .unfollowButton {
     font-size: 12px;
   }
-}
+} */
