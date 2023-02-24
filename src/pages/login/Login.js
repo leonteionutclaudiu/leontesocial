@@ -11,7 +11,7 @@ export const database = [
     password: 'pass1',
   },
   {
-    email: 'user2@leonte.com',
+    email: 'demo@leonte.com',
     password: 'pass2',
   },
 ];
@@ -84,6 +84,7 @@ function Login() {
                 name="email"
                 required
                 placeholder="Email"
+                value="demo@leonte.com"
               />
             </div>
             <div className={classes.inputContainer}>
@@ -93,6 +94,7 @@ function Login() {
                 name="pass"
                 required
                 placeholder="Password"
+                value="pass2"
               />
             </div>
             <div className={classes.buttonContainer}>
